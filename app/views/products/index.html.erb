@@ -1,0 +1,7 @@
+<% content_for(:title, "Products") %>
+
+<ul>
+  <% @products.each do |product| %>
+    <li><%= product.name %></li>
+  <% end %>
+</ul>
