@@ -26,6 +26,17 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
   end
 
+  def update
+    @product = Product.find(params[:id])
+    if @product.update(product_params)
+      flash[:notice] = "Product Successfully Updated"
+      redirect_to product_path(@product)
+    else
+      flash[:error] = "Please Try Again"
+      render :edit
+    end
+  end
+
 private
   def product_params
     params.require(:product).permit(:name, :cost, :country, :image)
