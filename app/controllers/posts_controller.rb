@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.all
+    @featured = Post.order(:created_at).last
+    @posts = Post.all.where.not(id: @featured.id)
   end
 
   def new
