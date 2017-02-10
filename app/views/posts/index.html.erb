@@ -4,7 +4,7 @@
 
 <ul>
   <% @posts.each do |post| %>
-    <li><%= link_to post.name, post_path(post) %></li>
+    <li><%= link_to post.title, post_path(post) %></li>
   <% end %>
 </ul>
 

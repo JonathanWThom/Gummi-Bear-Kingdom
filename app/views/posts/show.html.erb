@@ -1,7 +1,7 @@
-<% content_for(:title, @post.name) %>
+<% content_for(:title, @post.title) %>
 
 <h1><%= @post.title %></h1>
-<h5>$<%= @post.author %></h5>
+<h5><%= @post.author %></h5>
 <h5><%= @post.content %></h5>
 <%= image_tag @post.image %>
 
