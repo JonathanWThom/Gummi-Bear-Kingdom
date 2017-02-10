@@ -87,12 +87,13 @@
 
 .flash {
   color: white;
-  text-align: center;
   &-notice {
     background-color: green;
+    text-align: center;
   }
   &-error {
     background: red;
+    text-align: center;
   }
 }
 
