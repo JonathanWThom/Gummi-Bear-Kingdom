@@ -29,5 +29,17 @@
       <%= flash[:error] %>
       <%= yield %>
     </div>
+    <% if current_page?(root_path) %>
+      <div class="gummies">
+        <%= image_tag 'pink-gummy.png' %>
+        <%= image_tag 'orange-gummy.png' %>
+        <%= image_tag 'red-gummy.png' %>
+        <%= image_tag 'white-gummy.png' %>
+        <%= image_tag 'blue-gummy.png' %>
+      </div>
+      <div class="footer">
+        <h4>Get Straight to Eating Gummi Bears</h4>
+      </div>
+    <% end %>
   </body>
 </html>
