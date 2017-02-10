@@ -1,5 +1,15 @@
 <% content_for(:title, "New Product") %>
 
-<h1>Add A New Product</h1>
+<% content_for(:navbar) do %>
+  <div class="nav valign-wrapper purple-nav">
+    <%= image_tag 'white-gummy.png', :class => 'valign'%>
+    <%= link_to 'Gummi Bear Kingdom', root_path, :class => 'header valign' %>
+    <li><%= link_to 'Products', products_path, :class => 'valign nav-link' %></li>
+    <li><%= link_to 'Posts', posts_path, :class => 'valign nav-link' %></li>
+  </div>
+  <div class="extra-nav valign-wrapper">
+    <h4 class="valign">Add A New Product</h4>
+  </div>
+<% end %>
 
 <%= render 'form' %>
