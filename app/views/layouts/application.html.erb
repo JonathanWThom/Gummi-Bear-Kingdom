@@ -20,8 +20,16 @@
     </nav> -->
     <%= yield(:navbar) %>
     <div class="container">
-      <%= flash[:notice] %>
-      <%= flash[:error] %>
+      <% if flash[:notice] %>
+        <div class="flash-notice">
+          <%= flash[:notice] %>
+        </div>
+      <% end %>
+      <% if flash[:error] %>
+        <div class="flash-error">
+          <%= flash[:error] %>
+        </div>
+      <% end %>
       <%= yield %>
     </div>
     <% if current_page?(root_path) %>

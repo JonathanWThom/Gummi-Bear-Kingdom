@@ -84,3 +84,14 @@
     margin-right: auto;
   }
 }
+
+.flash {
+  color: white;
+  text-align: center;
+  &-notice {
+    background-color: green;
+  }
+  &-error {
+    background: red;
+  }
+}
