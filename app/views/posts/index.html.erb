@@ -6,10 +6,12 @@
     <%= link_to 'Gummi Bear Kingdom', root_path, :class => 'header valign' %>
     <li><%= link_to 'Products', products_path, :class => 'valign nav-link' %></li>
     <li><%= link_to 'Blog', posts_path, :class => 'valign nav-link' %></li>
-    <li><%= link_to "Add A New Post", new_post_path, :class => 'valign nav-link' %></li>
   </div>
   <div class="extra-nav valign-wrapper">
     <h4 class="valign">Gummi Bear Kingdom Blog</h4>
+  </div>
+  <div class="extra-options valign-wrapper">
+    <li><%= link_to "Add A New Post", new_post_path, :class => 'valign nav-link' %></li>
   </div>
 <% end %>
 
