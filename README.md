@@ -6,7 +6,7 @@
 
 ## Setup/Installation Requirements
 
-* _View a seeded and deployed version on [Heroku]()_
+* _View a seeded and deployed version on [Heroku](https://gummi-bear-kingdom.herokuapp.com/)_
 
 * _Or, to run locally, in the command line, run:_
 ```
