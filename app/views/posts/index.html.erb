@@ -1,0 +1,11 @@
+<% content_for(:title, "Blog") %>
+
+<!--show featured post -->
+
+<ul>
+  <% @posts.each do |post| %>
+    <li><%= link_to post.name, post_path(post) %></li>
+  <% end %>
+</ul>
+
+<p><%= link_to "Add A New Post", new_post_path %></p>

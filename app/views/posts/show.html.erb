@@ -1,0 +1,9 @@
+<% content_for(:title, @post.name) %>
+
+<h1><%= @post.title %></h1>
+<h5>$<%= @post.author %></h5>
+<h5><%= @post.content %></h5>
+<%= image_tag @post.image %>
+
+<p><%= link_to 'Edit Post', edit_post_path(@post) %></p>
+<p><%= link_to 'Delete Post', post_path(@post), :data => {:confirm => "Are you sure you want to delete this post?", :method => "delete"} %></p>

@@ -1,0 +1,9 @@
+<%= render 'layouts/errors', :object => @post %>
+
+<%= form_for @post do |f| %>
+  <%= f.text_field :title, :placeholder => 'Title' %>
+  <%= f.text_field :author, :placeholder => 'Author' %>
+  <%= f.number_field :content, :placeholder => 'Content' %>
+  <%= f.text_field :image, :placeholder => 'Image URL' %>
+  <%= f.submit %>
+<% end %>
