@@ -1,7 +1,14 @@
 <% content_for(:title, "Welcome") %>
 
-<h1>Gummi Bear Kingdom</h1>
+<div class="row welcome">
+  <div class="col s6">
+    <%= image_tag 'gummy-bears.png', :class => 'welcome-gummy' %>
+  </div>
+  <div class="col s6 content">
+    <p>Find Gummies</p>
+    <h5>Providing Gummi Bear Solutions for the Modern Age</h5>
+    <p>Choose Gummi Bear Kingdom for the same reasons disruptive startups do: it’s the best platform for meeting their insatiable gummi bear desires, finding new gummies, and scaling gummi production to meet demand.
 
-<h4>Providing Gummi Bear Solutions for the Modern Age</h4>
-
-<p><%= link_to "Explore Our Collection", products_path %></p>
+    <p><%= button_to "Explore Our Collection", products_path, :class => 'btn'%></p>
+  </div>
+</div>
