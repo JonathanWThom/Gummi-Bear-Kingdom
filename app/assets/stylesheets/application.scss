@@ -15,6 +15,23 @@
  */
 
  @import "materialize/components/color";
- $primary-color: color("blue", "lighten-2") !default;
+ $primary-color: color("purple", "darken-4") !default;
  $secondary-color: color("yellow", "base") !default;
- @import 'materialize'
+ @import 'materialize';
+
+.nav {
+  height: 75px;
+  padding-top: 20px;
+  padding-left: 10px;
+  li {
+    display: inline;
+  }
+  .header {
+    color: $primary-color;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  img {
+    height: 100%;
+  }
+}
