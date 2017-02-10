@@ -18,12 +18,7 @@
         </ul>
       </div>
     </nav> -->
-    <div class="nav valign-wrapper">
-      <%= image_tag 'purple_gummy.jpg', :class => 'valign'%>
-      <%= link_to 'Gummi Bear Kingdom', root_path, :class => 'header valign' %>
-      <li><%= link_to 'Products', products_path, :class => 'valign nav-link' %></li>
-      <li><%= link_to 'Posts', posts_path, :class => 'valign nav-link' %></li>
-    </div>
+    <%= yield(:navbar) %>
     <div class="container">
       <%= flash[:notice] %>
       <%= flash[:error] %>

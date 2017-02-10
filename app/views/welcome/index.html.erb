@@ -1,5 +1,14 @@
 <% content_for(:title, "Welcome") %>
 
+<% content_for(:navbar) do %>
+  <div class="nav valign-wrapper">
+    <%= image_tag 'purple_gummy.jpg', :class => 'valign'%>
+    <%= link_to 'Gummi Bear Kingdom', root_path, :class => 'header valign' %>
+    <li><%= link_to 'Products', products_path, :class => 'valign nav-link' %></li>
+    <li><%= link_to 'Posts', posts_path, :class => 'valign nav-link' %></li>
+  </div>
+<% end %>
+
 <div class="row welcome">
   <div class="col s6">
     <%= image_tag 'gummy-bears.png', :class => 'welcome-gummy' %>

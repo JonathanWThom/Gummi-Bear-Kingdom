@@ -61,3 +61,26 @@
     padding-top: 15px;
   }
 }
+
+.purple-nav {
+  background-color: $primary-color;
+  color: white;
+  .header {
+    color: white;
+  }
+  .nav-link {
+    color: white;
+  }
+
+}
+
+.extra-nav {
+  background-color: $primary-color;
+  color: white;
+  height: 200px;
+  margin-top: -20px;
+  h4 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

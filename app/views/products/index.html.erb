@@ -1,5 +1,17 @@
 <% content_for(:title, "Products") %>
 
+<% content_for(:navbar) do %>
+  <div class="nav valign-wrapper purple-nav">
+    <%= image_tag 'white-gummy.png', :class => 'valign'%>
+    <%= link_to 'Gummi Bear Kingdom', root_path, :class => 'header valign' %>
+    <li><%= link_to 'Products', products_path, :class => 'valign nav-link' %></li>
+    <li><%= link_to 'Posts', posts_path, :class => 'valign nav-link' %></li>
+  </div>
+  <div class="extra-nav valign-wrapper">
+    <h4 class="valign center-align">Gummi Bear Kingdom Products</h4>
+  </div>
+<% end %>
+
 <ul>
   <% @products.each do |product| %>
     <li><%= link_to product.name, product_path(product) %></li>
