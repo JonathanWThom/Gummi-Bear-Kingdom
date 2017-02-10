@@ -6,16 +6,26 @@
     <%= link_to 'Gummi Bear Kingdom', root_path, :class => 'header valign' %>
     <li><%= link_to 'Products', products_path, :class => 'valign nav-link' %></li>
     <li><%= link_to 'Posts', posts_path, :class => 'valign nav-link' %></li>
+    <li><%= link_to 'Add A New Product', new_product_path, :class => 'valign nav-link' %></li>
   </div>
   <div class="extra-nav valign-wrapper">
-    <h4 class="valign center-align">Gummi Bear Kingdom Products</h4>
+    <h4 class="valign">Gummi Bear Kingdom Products</h4>
   </div>
 <% end %>
 
-<ul>
-  <% @products.each do |product| %>
-    <li><%= link_to product.name, product_path(product) %></li>
-  <% end %>
-</ul>
+<h5 class="center-align">All Products</h5>
+<hr>
 
-<p><%= link_to "Add A New Product", new_product_path %></p>
+<% @products.each do |product| %>
+  <div class="row welcome">
+    <div class="col s6">
+      <%= image_tag product.image, :class => 'welcome-gummy' %>
+    </div>
+    <div class="col s6">
+      <h5><%= product.name %></h5>
+      <p>From: <%= product.country %></p>
+      <p>$<%= product.cost %>.</p>
+      <%= link_to "Learn More", products_path(product), :class => 'btn' %>
+    </div>
+  </div>
+<% end %>
