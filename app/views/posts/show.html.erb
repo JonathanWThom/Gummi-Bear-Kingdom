@@ -6,11 +6,13 @@
     <%= link_to 'Gummi Bear Kingdom', root_path, :class => 'header valign' %>
     <li><%= link_to 'Products', products_path, :class => 'valign nav-link' %></li>
     <li><%= link_to 'Blog', posts_path, :class => 'valign nav-link' %></li>
-    <li><%= link_to 'Edit This Post', edit_post_path(@post), :class => 'valign nav-link' %></li>
-    <li><%= link_to 'Delete This Post', post_path(@post), :class => 'valign nav-link', :data => {:confirm => "Are you sure you want to delete this post?", :method => "delete"} %></li>
   </div>
   <div class="extra-nav valign-wrapper">
     <h4 class="valign"><%= @post.title %></h4>
+  </div>
+  <div class="extra-options valign-wrapper">
+    <li><%= link_to 'Edit This Post', edit_post_path(@post), :class => 'valign nav-link' %></li>
+    <li><%= link_to 'Delete This Post', post_path(@post), :class => 'valign nav-link', :data => {:confirm => "Are you sure you want to delete this post?", :method => "delete"} %></li>
   </div>
 <% end %>
 <br>

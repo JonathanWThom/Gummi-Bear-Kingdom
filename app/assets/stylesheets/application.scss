@@ -95,3 +95,14 @@
     background: red;
   }
 }
+
+.extra-options {
+  background: darken(#ededed, 10%);
+  height: 50px;
+  li {
+    display: inline;
+  a {
+    color: $primary-color;
+    }
+  }
+}
